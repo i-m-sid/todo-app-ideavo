@@ -39,7 +39,7 @@ const TodoList: React.FC = () => {
       <div className="flex items-center mb-6">
         <input
           type="text"
-          className="flex-1 px-4 py-2 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-1 px-4 py-2 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600"
           placeholder="Add a new todo..."
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
@@ -50,7 +50,7 @@ const TodoList: React.FC = () => {
           }}
         />
         <button
-          className="ml-4 p-2 rounded-full bg-blue-500 hover:bg-blue-600 text-white"
+          className="ml-4 p-2 rounded-full text-white dark:text-gray-800"
           onClick={addTodo}
         >
           <PlusCircle size={24} />
@@ -67,7 +67,7 @@ const TodoList: React.FC = () => {
       ))}
 
       {todos.length === 0 && (
-        <div className="bg-white rounded-lg shadow-md p-4 text-center text-gray-500">
+        <div className="todo-item bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 text-center text-gray-500 dark:text-gray-400">
           No todos yet. Add a new one to get started!
         </div>
       )}

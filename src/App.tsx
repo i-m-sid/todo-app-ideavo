@@ -3,7 +3,7 @@ import TodoList from './components/TodoList';
 import { Moon, Sun } from 'lucide-react';
 
 const App: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
